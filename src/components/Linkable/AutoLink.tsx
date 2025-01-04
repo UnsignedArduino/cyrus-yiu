@@ -12,9 +12,16 @@ export default function AutoLink({
   className?: string;
 }): React.ReactNode {
   return href == undefined ? (
-    <a href={href}>{children}</a>
+    <a href={href} className={className}>
+      {children}
+    </a>
   ) : isExternalLink(href) ? (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
       {children}
     </a>
   ) : (
