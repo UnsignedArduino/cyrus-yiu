@@ -6,7 +6,8 @@ export default function Home() {
       <h2>Projects</h2>
       <p>
         Hello! Welcome to my projects. Here, you can find a list of select
-        projects that I really enjoyed working on in high school.
+        projects that I really enjoyed working on in high school. Click on one
+        of them to learn more!
       </p>
     </Layout>
   );
