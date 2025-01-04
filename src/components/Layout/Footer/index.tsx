@@ -1,5 +1,32 @@
 import React from "react";
 import BootstrapIcon from "@/components/Icon";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
+
+function FooterLink({
+  href,
+  icon,
+  tooltip,
+}: {
+  href: string;
+  icon: string;
+  tooltip?: string;
+}): React.ReactNode {
+  const stuff = (
+    <li className="ms-3">
+      {/* Would use AutoLink but text-body-secondary doesn't work then */}
+      <a
+        href={href}
+        className="text-body-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BootstrapIcon name={icon} />
+      </a>
+    </li>
+  );
+  return tooltip ? <Tippy content={tooltip}>{stuff}</Tippy> : stuff;
+}
 
 export default function Footer(): React.ReactNode {
   return (
@@ -11,17 +38,16 @@ export default function Footer(): React.ReactNode {
       </div>
 
       <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li className="ms-3">
-          {/* Would use AutoLink but text-body-secondary doesn't work then */}
-          <a
-            href="https://github.com/UnsignedArduino"
-            className="text-body-secondary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BootstrapIcon name="github" />
-          </a>
-        </li>
+        <FooterLink
+          href="https://github.com/UnsignedArduino"
+          icon="github"
+          tooltip="My GitHub account"
+        />
+        <FooterLink
+          href="https://github.com/UnsignedArduino/cyrus-yiu"
+          icon="code-square"
+          tooltip="The source code for this website"
+        />
       </ul>
     </footer>
   );

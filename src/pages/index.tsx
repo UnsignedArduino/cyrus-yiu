@@ -26,16 +26,17 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="mt-2 me-2"
-            src="https://github-readme-stats.vercel.app/api?username=UnsignedArduino&show_icons=true&hide=contribs&theme=transparent"
+            src="https://github-readme-stats.vercel.app/api?username=UnsignedArduino&show_icons=true&hide=contribs&hide_rank=true&theme=transparent"
             alt="Cyrus Yiu's GitHub stats"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
+            className="mt-2"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=UnsignedArduino&layout=compact&exclude_repo=GIF-converter-showcase&theme=transparent"
             alt="Cyrus Yiu's top languages"
           />
-          <br />
         </AutoLink>
+        <br />
         <small>
           <i>
             Powered by{" "}

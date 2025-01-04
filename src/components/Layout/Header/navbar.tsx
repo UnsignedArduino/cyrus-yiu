@@ -9,6 +9,7 @@ export default function Navbar({
   const navbarItems = {
     Home: "/",
     Projects: "/projects",
+    "Contact Me": "/contact",
   };
 
   return (
