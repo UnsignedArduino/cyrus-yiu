@@ -2,7 +2,7 @@
 
 [![Deployed on Cloudflare Pages](https://img.shields.io/badge/Deployed%20on-Cloudflare%20Pages-F38020?logo=cloudflarepages)](https://cyrus-yiu.pages.dev/)
 [![Lint](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/eslint.yml/badge.svg)](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/eslint.yml)
-[![Format](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/prettier.yml/badge.svg?branch=main)](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/prettier.yml)
+[![Format](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/prettier.yml/badge.svg)](https://github.com/UnsignedArduino/cyrus-yiu/actions/workflows/prettier.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/unsignedarduino/cyrus-yiu/badge)](https://www.codefactor.io/repository/github/unsignedarduino/cyrus-yiu)
 [![Contribute with Gitpod](https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/UnsignedArduino/cyrus-yiu)
 
