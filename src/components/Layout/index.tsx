@@ -28,7 +28,7 @@ export default function Layout({
       <div className="container-fluid">
         <div className="row">
           <div className="col d-none d-md-block" />
-          <div className="col-auto col-md-8 col-lg-7 col-xl-6">
+          <div className="col col-md-8 col-lg-7 col-xl-6">
             <Header current={current} />
             <main>{children}</main>
             <Footer />

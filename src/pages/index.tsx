@@ -21,32 +21,24 @@ export default function Home() {
         pit percussion and clarinets), playing the piano (including recitals and
         competitions), the occasional online chess game, and skiing!
       </p>
-      <p>
+      <div>
         <AutoLink href="https://github.com/UnsignedArduino">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            className="mt-2 me-2"
+            className="me-2 mt-2 align-top"
             src="https://github-readme-stats.vercel.app/api?username=UnsignedArduino&show_icons=true&hide=contribs&hide_rank=true&theme=transparent"
             alt="Cyrus Yiu's GitHub stats"
           />
+        </AutoLink>
+        <AutoLink href="https://github.com/UnsignedArduino">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            className="mt-2"
+            className="me-2 mt-2 align-top"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=UnsignedArduino&layout=compact&exclude_repo=GIF-converter-showcase&theme=transparent"
             alt="Cyrus Yiu's top languages"
           />
         </AutoLink>
-        <br />
-        <small>
-          <i>
-            Powered by{" "}
-            <AutoLink href="https://github.com/anuraghazra/github-readme-stats">
-              https://github.com/anuraghazra/github-readme-stats
-            </AutoLink>
-            .
-          </i>
-        </small>
-      </p>
+      </div>
     </Layout>
   );
 }
