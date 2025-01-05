@@ -65,7 +65,10 @@ export default function MakeCodeArcadeGameCard({
               <small>
                 <span className={`badge bg-${cardTheme}`}>{badge}</span>
                 {isFavorite && (
-                  <span className="badge bg-warning ms-1">Favorite</span>
+                  <>
+                    {" "}
+                    <span className="badge bg-warning">Favorite</span>
+                  </>
                 )}
               </small>
             </>

@@ -3,6 +3,8 @@ import AutoLink from "@/components/Linkable/AutoLink";
 import imageFossilClicker0 from "@/assets/makecode-arcade-games/fossil-clicker/0.png";
 import imageThePhoenixsQuest0 from "@/assets/makecode-arcade-games/the-phoenixs-quest/0.gif";
 import imageTheAttackOfTheSerpents0 from "@/assets/makecode-arcade-games/the-attack-of-the-serpents/0.gif";
+import imageFishyFishyCrossMyOcean0 from "@/assets/makecode-arcade-games/fishy-fishy-cross-my-ocean/0.png";
+import imageHonk0 from "@/assets/makecode-arcade-games/honk/0.png";
 import MakeCodeArcadeGameCard from "@/components/Cards/ProjectCard/MakeCodeArcadeGameCard";
 import React from "react";
 
@@ -104,13 +106,17 @@ export default function MakeCodeArcadeGames() {
             <br />
             <br />
             The Phoenix{"'"}s Quest was a{" "}
-            <AutoLink href="https://arcade.makecode.com/gamejam/prehistoric">
+            <AutoLink href="https://arcade.makecode.com/gamejam/global-2021">
               featured submission for the Global 2021 MakeCode Arcade Game Jam.
             </AutoLink>
             <br />
             <br />
-            The Cloudy Climb DLC, released in March 2022, contains ten new
-            levels and a new storyline.
+            The Cloudy Climb DLC, created by{" "}
+            <AutoLink href="https://forum.makecode.com/u/danger_kitty">
+              @danger_kitty
+            </AutoLink>{" "}
+            and released in March 2022, contains ten new levels and a new
+            storyline.
           </MakeCodeArcadeGameCard>
         </div>
         <div className="col">
@@ -145,6 +151,76 @@ export default function MakeCodeArcadeGames() {
             The Attack of the Serpents was an{" "}
             <AutoLink href="https://arcade.makecode.com/gamejam/time">
               honorable mention in the sixth MakeCode Arcade Game Jam.
+            </AutoLink>
+          </MakeCodeArcadeGameCard>
+        </div>
+        <div className="col">
+          <MakeCodeArcadeGameCard
+            images={[
+              {
+                "Fishy Fishy Cross My Ocean start screen":
+                  imageFishyFishyCrossMyOcean0,
+              },
+            ]}
+            title="Fishy Fishy Cross My Ocean"
+            badge="Honorable mention"
+            date="Dec 2020"
+            gameLinks={[
+              {
+                "Play Fishy Fishy Cross My Ocean":
+                  "https://unsignedarduino.github.io/Fishy-Fishy-Cross-my-Ocean/",
+              },
+            ]}
+            links={[
+              {
+                "Game forum post":
+                  "https://forum.makecode.com/t/fishy-fishy-cross-my-ocean/4769?u=unsignedarduino",
+              },
+              {
+                "Game Jam winners forum post":
+                  "https://forum.makecode.com/t/announcement-makecode-arcade-ocean-jam-results/5563?u=unsignedarduino",
+              },
+            ]}
+            cardTheme="primary"
+          >
+            Fishy Fishy Cross My Ocean is a simple game of crossing the ocean!
+            Just make it to the other side, it{"'"}s that easy! Well, just don
+            {"'"}t forget to avoid the sharks...
+            <br />
+            <br />
+            Fossil Clicker received an{" "}
+            <AutoLink href="https://arcade.makecode.com/gamejam/ocean">
+              honorable mention in the fifth MakeCode Arcade Game Jam.
+            </AutoLink>
+          </MakeCodeArcadeGameCard>
+        </div>
+        <div className="col">
+          <MakeCodeArcadeGameCard
+            images={[{ "HONK! start screen": imageHonk0 }]}
+            title="HONK!"
+            badge="#2 Game Jam winner"
+            date="Aug 2020"
+            gameLinks={[
+              {
+                "Play HONK!":
+                  "https://arcade.makecode.com/97928-66031-26500-83480",
+              },
+            ]}
+            links={[
+              {
+                "Game forum post":
+                  "https://forum.makecode.com/t/help-with-tile-centering/3279/5?u=unsignedarduino",
+              },
+            ]}
+            cardTheme="info"
+          >
+            HONK! other cars out of the way while aiming for power ups - watch
+            out, the game gets faster and faster!
+            <br />
+            <br />
+            HONK! won{" "}
+            <AutoLink href="https://arcade.makecode.com/gamejam/traffic">
+              second place in the fourth MakeCode Arcade Game Jam.
             </AutoLink>
           </MakeCodeArcadeGameCard>
         </div>
