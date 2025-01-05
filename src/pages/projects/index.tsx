@@ -11,8 +11,7 @@ export default function Projects() {
       <h2>Projects</h2>
       <p>
         Hello! Welcome to my projects. Here, you can find a list of select
-        projects that I really enjoyed working on in high school. Write-ups for
-        each project are coming soon!
+        projects that I really enjoyed working on in high school.
       </p>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
         <div className="col">
@@ -33,7 +32,8 @@ export default function Projects() {
             ]}
           >
             A multi-lingual low-power IOT 7in weather station that displays the
-            current weather and a five day forecast
+            current weather and a five day forecast. Detailed project write-up
+            coming soon...
           </ProjectCard>
         </div>
         <div className="col">
@@ -48,7 +48,8 @@ export default function Projects() {
               },
             ]}
           >
-            A Raspberry Pi uses computer vision to play chess against you!
+            A Raspberry Pi uses computer vision to play chess against you! Work
+            in progress...
           </ProjectCard>
         </div>
         <div className="col">
@@ -69,7 +70,7 @@ export default function Projects() {
             ]}
           >
             A small USB-C-powered 3D-printed fireplace that you can take
-            anywhere!
+            anywhere! Detailed project write-up coming soon...
           </ProjectCard>
         </div>
         <div className="col">
