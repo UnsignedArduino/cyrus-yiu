@@ -9,7 +9,7 @@ export default function MakeCodeArcadeGameCard({
   title,
   badge,
   date,
-  gameURL,
+  gameLinks,
   links,
   cardTheme,
 }: {
@@ -20,7 +20,9 @@ export default function MakeCodeArcadeGameCard({
   title: string;
   badge?: string;
   date: string;
-  gameURL: string;
+  gameLinks: {
+    [title: string]: string;
+  }[];
   links: {
     [title: string]: string;
   }[];
@@ -67,16 +69,23 @@ export default function MakeCodeArcadeGameCard({
         <h6 className="card-subtitle mb-2 text-body-secondary">{date}</h6>
         <p className="card-text">{children}</p>
         <p className="card-text">
-          <AutoLink
-            href={gameURL}
-            className={
-              cardTheme
-                ? `btn btn-${cardTheme} card-link`
-                : "btn btn-secondary card-link"
-            }
-          >
-            Click to play
-          </AutoLink>
+          {gameLinks.map((value) => {
+            const v = Object.entries(value)[0];
+            const text = v[0];
+            const href = v[1];
+            return (
+              <AutoLink
+                key={text}
+                href={href}
+                className={
+                  (cardTheme ? `btn btn-${cardTheme}` : "btn btn-secondary") +
+                  " me-2 mb-2"
+                }
+              >
+                {text}
+              </AutoLink>
+            );
+          })}
         </p>
         {links.map((value) => {
           const v = Object.entries(value)[0];
