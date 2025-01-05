@@ -188,7 +188,7 @@ export default function MakeCodeArcadeGames() {
             {"'"}t forget to avoid the sharks...
             <br />
             <br />
-            Fossil Clicker received an{" "}
+            Fishy Fishy Cross My Ocean received an{" "}
             <AutoLink href="https://arcade.makecode.com/gamejam/ocean">
               honorable mention in the fifth MakeCode Arcade Game Jam.
             </AutoLink>
