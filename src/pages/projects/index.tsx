@@ -6,7 +6,7 @@ import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finishe
 import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions page.png";
 import AutoLink from "@/components/Linkable/AutoLink";
 
-export default function Home() {
+export default function Projects() {
   return (
     <Layout title="Projects | Cyrus Yiu" current="Projects">
       <h2>Projects</h2>
@@ -130,6 +130,23 @@ export default function Home() {
                 className="card-link"
               >
                 Website
+              </AutoLink>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card h-100">
+            <div className="card-body">
+              <h5 className="card-title">MakeCode Arcade Games</h5>
+              <p className="card-text">
+                A list of MakeCode Arcade games that I have made, including
+                game-jam-winning and featured games!
+              </p>
+              <AutoLink
+                href="/projects/makecode-arcade-games"
+                className="card-link stretched-link"
+              >
+                View games
               </AutoLink>
             </div>
           </div>

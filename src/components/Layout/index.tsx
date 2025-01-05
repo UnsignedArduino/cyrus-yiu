@@ -2,12 +2,16 @@ import React from "react";
 import Head from "next/head";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
+import BreadCrumbs from "@/components/Layout/BreadCrumbs";
 
 type LayoutProps = {
   children: React.ReactNode;
   current?: string;
   title: string;
   description?: string;
+  breadCrumbs?: {
+    [title: string]: string;
+  }[];
 };
 
 export default function Layout({
@@ -15,6 +19,7 @@ export default function Layout({
   current,
   title,
   description,
+  breadCrumbs,
 }: LayoutProps): React.ReactNode {
   return (
     <>
@@ -30,6 +35,7 @@ export default function Layout({
           <div className="col d-none d-md-block" />
           <div className="col col-md-8 col-lg-7 col-xl-6">
             <Header current={current} />
+            {breadCrumbs && <BreadCrumbs breadCrumbs={breadCrumbs} />}
             <main>{children}</main>
             <Footer />
           </div>
