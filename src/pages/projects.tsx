@@ -4,6 +4,7 @@ import imageWeatherStationFinishedFront from "@/assets/weather-station/finished 
 import imageChessbotMoveTestWithFoolsMate from "@/assets/chessbot/move test with fools mate.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
 import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions page.png";
+import AutoLink from "@/components/Linkable/AutoLink";
 
 export default function Home() {
   return (
@@ -34,9 +35,18 @@ export default function Home() {
                 A multi-lingual low-power IOT 7in weather station that displays
                 the current weather and a five day forecast!
               </p>
-              {/*<Link href="#" className="card-link stretched-link">*/}
-              {/*  View details*/}
-              {/*</Link>*/}
+              <AutoLink
+                href="https://github.com/UnsignedArduino/ESP32-7in-EPaper-Weather-Station"
+                className="card-link"
+              >
+                GitHub repo for code
+              </AutoLink>
+              <AutoLink
+                href="https://github.com/UnsignedArduino/ESP32-7in-EPaper-Weather-Station-Hardware"
+                className="card-link"
+              >
+                GitHub repo for hardware
+              </AutoLink>
             </div>
           </div>
         </div>
@@ -57,9 +67,12 @@ export default function Home() {
                 A Raspberry Pi uses computer vision to play chess against you!
                 (Work in progress)
               </p>
-              {/*<Link href="#" className="card-link stretched-link">*/}
-              {/*  View details*/}
-              {/*</Link>*/}
+              <AutoLink
+                href="https://github.com/UnsignedArduino/Chessbot"
+                className="card-link"
+              >
+                GitHub repo
+              </AutoLink>
             </div>
           </div>
         </div>
@@ -80,9 +93,18 @@ export default function Home() {
                 A small USB-C-powered 3D-printed fireplace that you can take
                 anywhere!
               </p>
-              {/*<Link href="#" className="card-link stretched-link">*/}
-              {/*  View details*/}
-              {/*</Link>*/}
+              <AutoLink
+                href="https://github.com/UnsignedArduino/ESP32-S3-Little-Fireplace"
+                className="card-link"
+              >
+                GitHub repo for code
+              </AutoLink>
+              <AutoLink
+                href="https://github.com/UnsignedArduino/ESP32-S3-Little-Fireplace-Hardware"
+                className="card-link"
+              >
+                GitHub repo for hardware
+              </AutoLink>
             </div>
           </div>
         </div>
@@ -103,9 +125,12 @@ export default function Home() {
                 A community-driven site listing the best extensions and tools
                 for MakeCode Arcade game development!
               </p>
-              {/*<Link href="#" className="card-link stretched-link">*/}
-              {/*  View details*/}
-              {/*</Link>*/}
+              <AutoLink
+                href="https://awesome-arcade.vercel.app/"
+                className="card-link"
+              >
+                Website
+              </AutoLink>
             </div>
           </div>
         </div>
