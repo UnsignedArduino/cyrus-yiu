@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 import imageWeatherStationFinishedFront from "@/assets/weather-station/finished front.jpg";
 import imageChessbotMoveTestWithFoolsMate from "@/assets/chessbot/move test with fools mate.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="row row-cols-1 row-cols-lg-2 g-4">
         <div className="col">
           <div className="card h-100">
-            <Image
+            <ExportedImage
               className="card-img-top"
               src={imageWeatherStationFinishedFront}
               alt="A picture of the front finished weather station, showing the weather."
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <Image
+            <ExportedImage
               className="card-img-top"
               src={imageChessbotMoveTestWithFoolsMate}
               alt="A picture of a chessboard, a Raspberry Pi camera, a Raspberry Pi 5, and a monitor showing the fools mate on screen."
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <Image
+            <ExportedImage
               className="card-img-top"
               src={imageLittleFireplaceFinishedFront}
               alt="An animated picture of an all-black plastic fireplace with a little screen inside playing a fireplace animation."
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <Image
+            <ExportedImage
               className="card-img-top"
               src={imageAwesomeArcadeExtensionsPage}
               alt="A picture of the top of the web page of the Awesome Arcade site of the extensions page."

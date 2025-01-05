@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# some public folders from Niels-IO/next-image-export-optimizer
+/public/images
+/public/nextImageExportOptimizer
+
 # production
 /build
 
