@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import AutoLink from "@/components/Linkable/AutoLink";
 import imageFossilClicker0 from "@/assets/makecode-arcade-games/fossil-clicker/0.png";
 import imageThePhoenixsQuest0 from "@/assets/makecode-arcade-games/the-phoenixs-quest/0.gif";
+import imageTheAttackOfTheSerpents0 from "@/assets/makecode-arcade-games/the-attack-of-the-serpents/0.gif";
 import MakeCodeArcadeGameCard from "@/components/Cards/ProjectCard/MakeCodeArcadeGameCard";
 import React from "react";
 
@@ -20,7 +21,7 @@ export default function MakeCodeArcadeGames() {
         Here are some of the MakeCode Arcade games that I have made, including
         game-jam-winning and featured games!
       </p>
-      <div className="row row-cols-1 row-cols-lg-2 g-4 mb-2">
+      <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 mb-2">
         <div className="col">
           <MakeCodeArcadeGameCard
             images={[{ "Fossil Clicker start screen": imageFossilClicker0 }]}
@@ -86,6 +87,7 @@ export default function MakeCodeArcadeGames() {
               },
             ]}
             cardTheme="info"
+            isFavorite
           >
             The Phoenix{"'"}s Quest, in collaboration with{" "}
             <AutoLink href="https://forum.makecode.com/u/danger_kitty">
@@ -95,10 +97,10 @@ export default function MakeCodeArcadeGames() {
             monsters made out of trash, such as plastic containers in the ocean.
             The dialogue throughout the levels emphasized the climate crisis by
             informing players of how plastics that do not break down would
-            greatly harm the environment. This blocks-only game, containing over
-            2.4k blocks, features a three-slot save system, level selector, a
-            storyline consisting of twelve action-packed levels, and an epic
-            (and insanely hard by my standards) boss fight!
+            greatly harm the environment. Containing over 2.4k blocks, this game
+            features a three-slot save system, level selector, a storyline
+            consisting of twelve action-packed levels, and an epic (and insanely
+            hard by my standards) boss fight!
             <br />
             <br />
             The Phoenix{"'"}s Quest was a{" "}
@@ -109,6 +111,41 @@ export default function MakeCodeArcadeGames() {
             <br />
             The Cloudy Climb DLC, released in March 2022, contains ten new
             levels and a new storyline.
+          </MakeCodeArcadeGameCard>
+        </div>
+        <div className="col">
+          <MakeCodeArcadeGameCard
+            images={[
+              {
+                "A scene from the third part of the game The Attack of the Serpents.":
+                  imageTheAttackOfTheSerpents0,
+              },
+            ]}
+            title="The Attack of the Serpents"
+            badge="Honorable mention"
+            date="May 2021"
+            gameLinks={[
+              {
+                "Play The Attack of the Serpents":
+                  "https://unsignedarduino.github.io/The-Attack-of-the-Serpents/",
+              },
+            ]}
+            links={[
+              {
+                "Game forum post":
+                  "https://forum.makecode.com/t/the-attack-of-the-serpents/7912?u=unsignedarduino",
+              },
+            ]}
+            cardTheme="primary"
+          >
+            Fight legions of snakes with the power of time at your hand in The
+            Attack of the Serpents!
+            <br />
+            <br />
+            The Attack of the Serpents was an{" "}
+            <AutoLink href="https://arcade.makecode.com/gamejam/time">
+              honorable mention in the sixth MakeCode Arcade Game Jam.
+            </AutoLink>
           </MakeCodeArcadeGameCard>
         </div>
       </div>

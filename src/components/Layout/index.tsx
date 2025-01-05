@@ -33,7 +33,7 @@ export default function Layout({
       <div className="container-fluid">
         <div className="row">
           <div className="col d-none d-md-block" />
-          <div className="col col-md-8 col-lg-7 col-xl-6">
+          <div className="col col-md-9 col-lg-8 col-xl-7">
             <Header current={current} />
             {breadCrumbs && <BreadCrumbs breadCrumbs={breadCrumbs} />}
             <main>{children}</main>

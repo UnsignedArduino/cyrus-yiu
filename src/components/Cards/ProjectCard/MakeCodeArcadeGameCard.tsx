@@ -12,6 +12,7 @@ export default function MakeCodeArcadeGameCard({
   gameLinks,
   links,
   cardTheme,
+  isFavorite,
 }: {
   children: React.ReactNode;
   images: {
@@ -35,6 +36,7 @@ export default function MakeCodeArcadeGameCard({
     | "info"
     | "light"
     | "dark";
+  isFavorite?: boolean;
 }): React.ReactNode {
   return (
     <div
@@ -61,14 +63,17 @@ export default function MakeCodeArcadeGameCard({
             <>
               {" "}
               <small>
-                <span className={`badge text-bg-${cardTheme}`}>{badge}</span>
+                <span className={`badge bg-${cardTheme}`}>{badge}</span>
+                {isFavorite && (
+                  <span className="badge bg-warning ms-1">Favorite</span>
+                )}
               </small>
             </>
           )}
         </h5>
         <h6 className="card-subtitle mb-2 text-body-secondary">{date}</h6>
         <p className="card-text">{children}</p>
-        <p className="card-text">
+        <p className="card-text d-grid gap-2">
           {gameLinks.map((value) => {
             const v = Object.entries(value)[0];
             const text = v[0];
@@ -78,8 +83,7 @@ export default function MakeCodeArcadeGameCard({
                 key={text}
                 href={href}
                 className={
-                  (cardTheme ? `btn btn-${cardTheme}` : "btn btn-secondary") +
-                  " me-2 mb-2"
+                  cardTheme ? `btn btn-${cardTheme}` : "btn btn-secondary"
                 }
               >
                 {text}
