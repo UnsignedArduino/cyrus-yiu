@@ -3,6 +3,7 @@ import imageWeatherStationFinishedFront from "@/assets/weather-station/finished 
 import imageChessbotMoveTestWithFoolsMate from "@/assets/chessbot/move test with fools mate.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
 import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions page.png";
+import imageMakeCodeArcadeGamesThumb from "@/assets/makecode-arcade-games/thumb.png";
 import ProjectCard from "@/components/Cards/ProjectCard";
 
 export default function Projects() {
@@ -91,6 +92,8 @@ export default function Projects() {
         </div>
         <div className="col">
           <ProjectCard
+            image={imageMakeCodeArcadeGamesThumb}
+            imageAlt="A selection of my games on MakeCode Arcade."
             title="MakeCode Arcade Games"
             subtitle="2021 - now"
             links={[
