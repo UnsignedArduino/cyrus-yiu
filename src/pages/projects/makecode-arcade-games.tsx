@@ -38,6 +38,10 @@ export default function MakeCodeArcadeGames() {
         Here are some of the MakeCode Arcade games that I have made, including
         game-jam-winning and featured games!
       </p>
+      <div className="alert alert-warning" role="alert">
+        Due to the age of some of these games, there may be more bugs than
+        normal.
+      </div>
       <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 mb-2">
         <div className="col">
           <MakeCodeArcadeGameCard
@@ -288,7 +292,7 @@ export default function MakeCodeArcadeGames() {
             ]}
             cardTheme="secondary"
           >
-            A rhythm game to the songCrab Rave by Noisestorm.
+            A rhythm game to the song Crab Rave by Noisestorm.
           </MakeCodeArcadeGameCard>
         </div>
         <div className="col">
@@ -322,15 +326,15 @@ export default function MakeCodeArcadeGames() {
           <MakeCodeArcadeGameCard
             images={[
               {
-                "CUPS lol preview": imageCUPSlol0,
+                "CUPS preview": imageCUPSlol0,
               },
             ]}
-            title="CUPS lol"
+            title="CUPS"
             badge=""
             date="Jul 2021"
             gameLinks={[
               {
-                "Play CUPS lol":
+                "Play CUPS":
                   "https://arcade.makecode.com/51983-54802-28425-53222",
               },
             ]}
