@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import imageChessboardRender from "@/assets/chessboard/Chessboard_Design_2025-Apr-15_10-40-31PM-000_CustomizedView21650680859_png.png";
 import imageWeatherStationFinishedFront from "@/assets/weather-station/finished front.jpg";
 import imageChessbotMoveTestWithFoolsMate from "@/assets/chessbot/move test with fools mate.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
@@ -15,6 +16,41 @@ export default function Projects() {
         projects that I really enjoyed working on in high school.
       </p>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div className="col">
+          <ProjectCard
+            image={imageChessboardRender}
+            imageAlt="A render of the project in Fusion."
+            title="Chessboard"
+            subtitle="Jan 2025 - now"
+            links={[
+              {
+                "GitHub repo for PCB files":
+                  "https://github.com/UnsignedArduino/Chessboard-Hardware",
+              },
+              {
+                "GitHub repo for more PCB files":
+                  "https://github.com/UnsignedArduino/Chessboard-Hardware-2",
+              },
+              {
+                "GitHub repo for design files":
+                  "https://github.com/UnsignedArduino/Chessboard-Design",
+              },
+              {
+                "GitHub repo for code":
+                  "https://github.com/UnsignedArduino/Chessboard-Nano",
+              },
+              {
+                "GitHub repo for more code":
+                  "https://github.com/UnsignedArduino/Chessboard-Pi",
+              },
+            ]}
+          >
+            A digital chessboard that tracks pieces, enforces game rules, and
+            suggests moves! Detailed project write-up coming soon... (You may
+            wonder why I start this when I have the Chessbot - I honestly don
+            {"'"}t know 🤷‍♂ )
+          </ProjectCard>
+        </div>
         <div className="col">
           <ProjectCard
             image={imageWeatherStationFinishedFront}
