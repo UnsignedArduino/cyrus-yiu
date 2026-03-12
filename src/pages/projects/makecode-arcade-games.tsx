@@ -39,8 +39,9 @@ export default function MakeCodeArcadeGames() {
         game-jam-winning and featured games!
       </p>
       <div className="alert alert-warning" role="alert">
-        Due to the age of some of these games, there may be more bugs than
-        normal.
+        Due to the age of some of these games and updates made to the MakeCode
+        Arcade simulator, there may be more bugs than when these games were
+        initially developed!
       </div>
       <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 mb-2">
         <div className="col">

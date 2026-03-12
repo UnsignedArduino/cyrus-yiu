@@ -33,11 +33,16 @@ export default function Footer(): React.ReactNode {
     <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div className="col-md-4 d-flex align-items-center">
         <span className="mb-3 mb-md-0 text-body-secondary">
-          © 2025 Cyrus Yiu
+          © 2026 Cyrus Yiu
         </span>
       </div>
 
       <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <FooterLink
+          href="https://www.linkedin.com/in/cyrus-yiu/"
+          icon="linkedin"
+          tooltip="My LinkedIn"
+        />
         <FooterLink
           href="https://github.com/UnsignedArduino"
           icon="github"

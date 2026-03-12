@@ -1,62 +1,68 @@
 import Layout from "@/components/Layout";
-import imageChessboardRender from "@/assets/chessboard/Chessboard_Design_2025-Apr-15_10-40-31PM-000_CustomizedView21650680859_png.png";
 import imageWeatherStationFinishedFront from "@/assets/weather-station/finished front.jpg";
-import imageChessbotMoveTestWithFoolsMate from "@/assets/chessbot/move test with fools mate.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
 import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions page.png";
 import imageMakeCodeArcadeGamesThumb from "@/assets/makecode-arcade-games/thumb.png";
 import ProjectCard from "@/components/Cards/ProjectCard";
+import AutoLink from "@/components/Linkable/AutoLink";
 
 export default function Projects() {
   return (
     <Layout title="Projects | Cyrus Yiu" current="Projects">
       <h2>Projects</h2>
       <p>
-        Hello! Welcome to my projects. Here, you can find a list of select
-        projects that I really enjoyed working on in high school.
+        Hello - welcome to my projects! Here, you can find a list of select
+        projects that I really enjoyed working on in high school and in college.
+      </p>
+      <p>
+        Consider checking out my{" "}
+        <AutoLink href="https://github.com/UnsignedArduino">
+          GitHub profile
+        </AutoLink>{" "}
+        to find the latest things I{"'"}ve been up to!
       </p>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-        <div className="col">
-          <ProjectCard
-            image={imageChessboardRender}
-            imageAlt="A render of the project in Fusion."
-            title="Chessboard"
-            subtitle="Jan 2025 - now"
-            links={[
-              {
-                "GitHub repo for PCB files":
-                  "https://github.com/UnsignedArduino/Chessboard-Hardware",
-              },
-              {
-                "GitHub repo for more PCB files":
-                  "https://github.com/UnsignedArduino/Chessboard-Hardware-2",
-              },
-              {
-                "GitHub repo for design files":
-                  "https://github.com/UnsignedArduino/Chessboard-Design",
-              },
-              {
-                "GitHub repo for code":
-                  "https://github.com/UnsignedArduino/Chessboard-Nano",
-              },
-              {
-                "GitHub repo for more code":
-                  "https://github.com/UnsignedArduino/Chessboard-Pi",
-              },
-            ]}
-          >
-            A digital chessboard that tracks pieces, enforces game rules, and
-            suggests moves! Detailed project write-up coming soon... (You may
-            wonder why I start this when I have the Chessbot - I honestly don
-            {"'"}t know 🤷‍♂ )
-          </ProjectCard>
-        </div>
+        {/*<div className="col">*/}
+        {/*  <ProjectCard*/}
+        {/*    image={imageChessboardRender}*/}
+        {/*    imageAlt="A render of the project in Fusion."*/}
+        {/*    title="Chessboard"*/}
+        {/*    subtitle="Jan 2025 - now"*/}
+        {/*    links={[*/}
+        {/*      {*/}
+        {/*        "GitHub repo for PCB files":*/}
+        {/*          "https://github.com/UnsignedArduino/Chessboard-Hardware",*/}
+        {/*      },*/}
+        {/*      {*/}
+        {/*        "GitHub repo for more PCB files":*/}
+        {/*          "https://github.com/UnsignedArduino/Chessboard-Hardware-2",*/}
+        {/*      },*/}
+        {/*      {*/}
+        {/*        "GitHub repo for design files":*/}
+        {/*          "https://github.com/UnsignedArduino/Chessboard-Design",*/}
+        {/*      },*/}
+        {/*      {*/}
+        {/*        "GitHub repo for code":*/}
+        {/*          "https://github.com/UnsignedArduino/Chessboard-Nano",*/}
+        {/*      },*/}
+        {/*      {*/}
+        {/*        "GitHub repo for more code":*/}
+        {/*          "https://github.com/UnsignedArduino/Chessboard-Pi",*/}
+        {/*      },*/}
+        {/*    ]}*/}
+        {/*  >*/}
+        {/*    A digital chessboard that tracks pieces, enforces game rules, and*/}
+        {/*    suggests moves! Detailed project write-up coming soon... (You may*/}
+        {/*    wonder why I start this when I have the Chessbot - I honestly don*/}
+        {/*    {"'"}t know 🤷‍♂ )*/}
+        {/*  </ProjectCard>*/}
+        {/*</div>*/}
         <div className="col">
           <ProjectCard
             image={imageWeatherStationFinishedFront}
             imageAlt="A picture of the front finished weather station, showing the weather."
             title="Weather Station"
-            subtitle="Feb - Aug 2024"
+            subtitle="Feb 2024 - Aug 2024"
             links={[
               {
                 "GitHub repo for code":
@@ -68,33 +74,32 @@ export default function Projects() {
               },
             ]}
           >
-            A multi-lingual low-power IOT 7in weather station that displays the
-            current weather and a five day forecast. Detailed project write-up
-            coming soon...
+            A multi-lingual low-power IoT 7in weather station that displays the
+            current weather and a five day forecast.
           </ProjectCard>
         </div>
-        <div className="col">
-          <ProjectCard
-            image={imageChessbotMoveTestWithFoolsMate}
-            imageAlt="A picture of a chessboard, a Raspberry Pi camera, a Raspberry Pi 5, and a monitor showing the fools mate on screen."
-            title="Chessbot"
-            subtitle="Sep 2024 - now"
-            links={[
-              {
-                "GitHub repo": "https://github.com/UnsignedArduino/Chessbot",
-              },
-            ]}
-          >
-            A Raspberry Pi uses computer vision to play chess against you! Work
-            in progress...
-          </ProjectCard>
-        </div>
+        {/*<div className="col">*/}
+        {/*  <ProjectCard*/}
+        {/*    image={imageChessbotMoveTestWithFoolsMate}*/}
+        {/*    imageAlt="A picture of a chessboard, a Raspberry Pi camera, a Raspberry Pi 5, and a monitor showing the fools mate on screen."*/}
+        {/*    title="Chessbot"*/}
+        {/*    subtitle="Sep 2024 - now"*/}
+        {/*    links={[*/}
+        {/*      {*/}
+        {/*        "GitHub repo": "https://github.com/UnsignedArduino/Chessbot",*/}
+        {/*      },*/}
+        {/*    ]}*/}
+        {/*  >*/}
+        {/*    A Raspberry Pi uses computer vision to play chess against you! Work*/}
+        {/*    in progress...*/}
+        {/*  </ProjectCard>*/}
+        {/*</div>*/}
         <div className="col">
           <ProjectCard
             image={imageLittleFireplaceFinishedFront}
             imageAlt="An animated picture of an all-black plastic fireplace with a little screen inside playing a fireplace animation."
             title="Little Fireplace"
-            subtitle="Nov - Dec 2024"
+            subtitle="Nov 2024 - Dec 2024"
             links={[
               {
                 "GitHub repo for code":
@@ -107,7 +112,7 @@ export default function Projects() {
             ]}
           >
             A small USB-C-powered 3D-printed fireplace that you can take
-            anywhere! Detailed project write-up coming soon...
+            anywhere!
           </ProjectCard>
         </div>
         <div className="col">

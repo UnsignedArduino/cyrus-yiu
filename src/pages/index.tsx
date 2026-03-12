@@ -6,20 +6,15 @@ export default function Home() {
     <Layout title="Cyrus Yiu" current="Home">
       <h2>About Me</h2>
       <p>
-        Hello! I{"'"}m Cyrus Yiu, a senior at Woburn Memorial High School. I
-        {"'"}m interested in majoring in Computer Engineering, Electrical
-        Engineering, or Computer Science. Check out my favorite projects{" "}
-        <AutoLink href="/projects">here</AutoLink> and my GitHub{" "}
-        <AutoLink href="https://github.com/UnsignedArduino">here</AutoLink>!
+        Hello! I{"'"}m Cyrus Yiu, a freshmen Computer Engineering major at
+        University of Massachusetts Lowell. Check out my favorite projects{" "}
+        <AutoLink href="/projects">here</AutoLink>, or let{"'"}s{" "}
+        <AutoLink href="/contact">get in touch</AutoLink>!
       </p>
       <p>
-        Besides engineering and working on digital and physical projects, I
-        enjoy other activities including competing in the WMHS Math Team (as
-        co-captain) and Science Team. I also teach middle school kids how to
-        code in Python with the WMHS Coding Club. Non-STEM activities include
-        performing in the WMHS Marching and Concert Band (as section leader for
-        pit percussion and clarinets), playing the piano (including recitals and
-        competitions), the occasional online chess game, and skiing!
+        Besides engineering and working on personal digital and physical
+        projects, I enjoy other extracurriculars such as Robotics, Rocketry, and
+        Marching Band!
       </p>
       <div>
         <AutoLink href="https://github.com/UnsignedArduino">
