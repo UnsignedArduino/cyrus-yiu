@@ -72,6 +72,10 @@ export default function Projects() {
                 "GitHub repo for hardware":
                   "https://github.com/UnsignedArduino/ESP32-7in-EPaper-Weather-Station-Hardware",
               },
+              {
+                "GitHub repo for design":
+                  "https://github.com/UnsignedArduino/ESP32-7in-EPaper-Weather-Station-Design",
+              },
             ]}
           >
             A multi-lingual low-power IoT 7in weather station that displays the
@@ -123,7 +127,11 @@ export default function Projects() {
             subtitle="April 2023 - now"
             links={[
               {
-                Website: "https://awesome-arcade.vercel.app/",
+                "Visit website": "https://awesome-arcade.vercel.app/",
+              },
+              {
+                "GitHub repo":
+                  "https://github.com/UnsignedArduino/Awesome-Arcade",
               },
             ]}
           >
