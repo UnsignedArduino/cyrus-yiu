@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import imageStockTickerInProgressFront from "@/assets/stock-ticker/in progress front.gif";
 import imageWeatherStationFinishedFront from "@/assets/weather-station/finished front.jpg";
 import imageLittleFireplaceFinishedFront from "@/assets/little-fireplace/finished front.gif";
 import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions page.png";
@@ -57,6 +58,32 @@ export default function Projects() {
         {/*    {"'"}t know 🤷‍♂ )*/}
         {/*  </ProjectCard>*/}
         {/*</div>*/}
+        <div className="col">
+          <ProjectCard
+            image={imageStockTickerInProgressFront}
+            imageAlt="An animated picture of a stock ticker in progress, scrolling the current price of Google."
+            title="Stock Ticker"
+            subtitle="Jun 2025 - now"
+            links={[
+              {
+                "GitHub repo for code":
+                  "https://github.com/UnsignedArduino/Stock-Ticker-Pico2W",
+              },
+              {
+                "GitHub repo for hardware (unfinished)":
+                  "https://github.com/UnsignedArduino/Stock-Ticker-Hardware",
+              },
+              {
+                "GitHub repo for design (unfinished)":
+                  "https://github.com/UnsignedArduino/Stock-Ticker-Design",
+              },
+            ]}
+          >
+            A smooth-scrolling live stock ticker that displays the current price
+            of stocks you choose on a string of LED matrices! Work in
+            progress...
+          </ProjectCard>
+        </div>
         <div className="col">
           <ProjectCard
             image={imageWeatherStationFinishedFront}
