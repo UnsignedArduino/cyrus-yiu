@@ -19,6 +19,41 @@ const nextConfig: NextConfig = {
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/github",
+        destination: "https://github.com/UnsignedArduino",
+        permanent: false,
+      },
+      {
+        source: "/gh",
+        destination: "https://github.com/UnsignedArduino",
+        permanent: false,
+      },
+      {
+        source: "/linkedin",
+        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        permanent: false,
+      },
+      {
+        source: "/li",
+        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        permanent: false,
+      },
+      {
+        source: "/in",
+        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        permanent: false,
+      },
+      {
+        source: "/resume",
+        destination:
+          "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

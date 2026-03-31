@@ -5,7 +5,14 @@ export function isExternalLink(url: string): boolean {
   try {
     return new URL(url).host !== window.location.host;
   } catch {
-    const urls = ["http://localhost:3000", "https://cyrus-yiu.pages.dev"];
+    const urls = [
+      "http://localhost:3000",
+      "https://cyrus-yiu.pages.dev",
+      "https://cyrus-yiu.com",
+      "https://cyrusyiu.com",
+      "https://www.cyrus-yiu.com",
+      "https://www.cyrusyiu.com",
+    ];
     try {
       return !urls.some((u) => {
         return new URL(url).host === new URL(u).host;

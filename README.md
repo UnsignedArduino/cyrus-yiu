@@ -26,4 +26,12 @@ Before commit, make sure to format, (`yarn run format` / `yarn run writeFormat`)
 `yarn run build` and `yarn run start`. (because it is a static site, you can use any static server to serve the files in
 the `out` directory)
 
-This website is currently deployed to Cloudflare Pages at https://cyrus-yiu.pages.dev/.
+This website is currently deployed to Cloudflare Pages at https://cyrusyiu.com
+
+## Notes
+
+- URL redirects (`/github`, `/linkedin`, etc.) are in
+  [`public/_redirects`](public/_redirects) (deployed on Cloudflare Pages),
+  also add them to [`next.config.ts`](next.config.ts) while at it.
+- URLs for GitHub link, LinkedIn link, are not centralized yet, do full code
+  search for all URLs if replacing.
