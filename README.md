@@ -33,5 +33,5 @@ This website is currently deployed to Cloudflare Pages at https://cyrusyiu.com
 - URL redirects (`/github`, `/linkedin`, etc.) are in
   [`public/_redirects`](public/_redirects) (deployed on Cloudflare Pages),
   also add them to [`next.config.ts`](next.config.ts) while at it.
-- URLs for GitHub link, LinkedIn link, are not centralized yet, do full code
-  search for all URLs if replacing.
+- URLs for GitHub link, LinkedIn link, etc. are not centralized yet, do full
+  code search for all URLs if replacing.

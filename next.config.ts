@@ -52,6 +52,12 @@ const nextConfig: NextConfig = {
           "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view",
         permanent: false,
       },
+      {
+        source: "/cv",
+        destination:
+          "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view",
+        permanent: false,
+      },
     ];
   },
 };
