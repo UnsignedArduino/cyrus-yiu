@@ -20,6 +20,7 @@ import imageProceduralGeneration0 from "@/assets/makecode-arcade-games/procedura
 import imageFishyFishyCrossMyOcean0 from "@/assets/makecode-arcade-games/fishy-fishy-cross-my-ocean/0.png";
 import imageDeckedOut0 from "@/assets/makecode-arcade-games/decked-out/0.png";
 import imageHonk0 from "@/assets/makecode-arcade-games/honk/0.png";
+import imageBocce0 from "@/assets/makecode-arcade-games/bocce/0.png";
 import MakeCodeArcadeGameCard from "@/components/Cards/ProjectCard/MakeCodeArcadeGameCard";
 import React from "react";
 
@@ -44,6 +45,36 @@ export default function MakeCodeArcadeGames() {
         initially developed!
       </div>
       <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 mb-2">
+        <div className="col">
+          <MakeCodeArcadeGameCard
+            images={[{ "Bocce start screen": imageBocce0 }]}
+            title="Bocce"
+            badge="Honorable mention"
+            date="May 2026"
+            gameLinks={[
+              {
+                "Play Bocce":
+                  "https://arcade.makecode.com/S68101-34907-89351-23500",
+              },
+            ]}
+            links={[
+              {
+                "Game forum post":
+                  "https://forum.makecode.com/t/bocce-12th-makecode-arcade-sports-game-jam-submission/44056?u=unsignedarduino",
+              },
+            ]}
+            cardTheme="primary"
+          >
+            An implementation of Bocce in MakeCode Arcade with a custom physics
+            engine, all written in blocks.
+            <br />
+            <br />
+            Bocce was an{" "}
+            <AutoLink href="https://arcade.makecode.com/gamejam/sports">
+              honorable mention in the twelfth MakeCode Arcade Game Jam.
+            </AutoLink>
+          </MakeCodeArcadeGameCard>
+        </div>
         <div className="col">
           <MakeCodeArcadeGameCard
             images={[{ "Fossil Clicker start screen": imageFossilClicker0 }]}
