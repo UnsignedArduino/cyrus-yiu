@@ -6,15 +6,15 @@ export default function Home() {
     <Layout title="Cyrus Yiu" current="Home">
       <h2>About Me</h2>
       <p>
-        Hello! I{"'"}m Cyrus Yiu, a freshmen Computer Engineering major at
+        Hello! I{"'"}m Cyrus Yiu, a first-year Computer Engineering major at
         University of Massachusetts Lowell. Check out my favorite projects{" "}
         <AutoLink href="/projects">here</AutoLink>, or let{"'"}s{" "}
         <AutoLink href="/contact">get in touch</AutoLink>!
       </p>
       <p>
         Besides engineering and working on personal digital and physical
-        projects, I enjoy other extracurriculars such as Robotics, Rocketry, and
-        Marching Band!
+        projects, I enjoy other extracurriculars such as robotics, rocketry, and
+        marching band!
       </p>
       {/*<div>*/}
       {/*  <AutoLink href="https://github.com/UnsignedArduino">*/}
