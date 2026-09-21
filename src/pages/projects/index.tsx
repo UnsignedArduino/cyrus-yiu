@@ -6,6 +6,7 @@ import imageAwesomeArcadeExtensionsPage from "@/assets/awesome-arcade/extensions
 import imageMakeCodeArcadeGamesThumb from "@/assets/makecode-arcade-games/thumb.png";
 import ProjectCard from "@/components/Cards/ProjectCard";
 import AutoLink from "@/components/Linkable/AutoLink";
+import { GITHUB_PROFILE_URL } from "@/lib/links";
 
 export default function Projects() {
   return (
@@ -17,10 +18,8 @@ export default function Projects() {
       </p>
       <p>
         Consider checking out my{" "}
-        <AutoLink href="https://github.com/UnsignedArduino">
-          GitHub profile
-        </AutoLink>{" "}
-        to find the latest things I{"'"}ve been up to!
+        <AutoLink href={GITHUB_PROFILE_URL}>GitHub profile</AutoLink> to find
+        the latest things I{"'"}ve been up to!
       </p>
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
         {/*<div className="col">*/}

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import AutoLink from "@/components/Linkable/AutoLink";
+import { GITHUB_ISSUES_URL } from "@/lib/links";
 
 export default function InternalServerError() {
   return (
@@ -14,10 +15,8 @@ export default function InternalServerError() {
       </p>
       <p>
         You can <AutoLink href="/contact">contact me</AutoLink> or report{" "}
-        <AutoLink href="https://github.com/UnsignedArduino/cyrus-yiu/issues">
-          issues
-        </AutoLink>{" "}
-        like this in the GitHub repository if this error persists.
+        <AutoLink href={GITHUB_ISSUES_URL}>issues</AutoLink> like this in the
+        GitHub repository if this error persists.
       </p>
     </Layout>
   );

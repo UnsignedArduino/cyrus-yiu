@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { GITHUB_PROFILE_URL, LINKEDIN_URL, RESUME_URL } from "@/lib/links";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -23,39 +24,37 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/github",
-        destination: "https://github.com/UnsignedArduino",
+        destination: GITHUB_PROFILE_URL,
         permanent: false,
       },
       {
         source: "/gh",
-        destination: "https://github.com/UnsignedArduino",
+        destination: GITHUB_PROFILE_URL,
         permanent: false,
       },
       {
         source: "/linkedin",
-        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        destination: LINKEDIN_URL,
         permanent: false,
       },
       {
         source: "/li",
-        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        destination: LINKEDIN_URL,
         permanent: false,
       },
       {
         source: "/in",
-        destination: "https://www.linkedin.com/in/cyrus-yiu/",
+        destination: LINKEDIN_URL,
         permanent: false,
       },
       {
         source: "/resume",
-        destination:
-          "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view",
+        destination: RESUME_URL,
         permanent: false,
       },
       {
         source: "/cv",
-        destination:
-          "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view",
+        destination: RESUME_URL,
         permanent: false,
       },
     ];

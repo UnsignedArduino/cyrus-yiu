@@ -2,6 +2,7 @@ import React from "react";
 import BootstrapIcon from "@/components/Icon";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
+import { GITHUB_PROFILE_URL, GITHUB_REPO_URL, LINKEDIN_URL } from "@/lib/links";
 
 function FooterLink({
   href,
@@ -38,18 +39,14 @@ export default function Footer(): React.ReactNode {
       </div>
 
       <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <FooterLink href={LINKEDIN_URL} icon="linkedin" tooltip="My LinkedIn" />
         <FooterLink
-          href="https://www.linkedin.com/in/cyrus-yiu/"
-          icon="linkedin"
-          tooltip="My LinkedIn"
-        />
-        <FooterLink
-          href="https://github.com/UnsignedArduino"
+          href={GITHUB_PROFILE_URL}
           icon="github"
           tooltip="My GitHub account"
         />
         <FooterLink
-          href="https://github.com/UnsignedArduino/cyrus-yiu"
+          href={GITHUB_REPO_URL}
           icon="code-square"
           tooltip="The source code for this website"
         />
