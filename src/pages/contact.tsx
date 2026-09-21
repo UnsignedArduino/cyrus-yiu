@@ -1,6 +1,11 @@
 import Layout from "@/components/Layout";
 import AutoLink from "@/components/Linkable/AutoLink";
-import { GITHUB_PROFILE_URL, LINKEDIN_URL, RESUME_URL } from "@/lib/links";
+import {
+  GITHUB_PROFILE_URL,
+  LINKEDIN_URL,
+  RESUME_MD_URL,
+  RESUME_PDF_URL,
+} from "@/lib/links";
 import React from "react";
 
 export default function Contact() {
@@ -16,7 +21,9 @@ export default function Contact() {
         public email I use for GitHub.
       </p>
       <p>
-        Check out my resume <AutoLink href={RESUME_URL}>here</AutoLink>.
+        Check out my resume <AutoLink href={RESUME_PDF_URL}>here</AutoLink>. (
+        <AutoLink href={RESUME_MD_URL}>Markdown version</AutoLink>, in case you
+        or your AI prefer plain text)
       </p>
     </Layout>
   );

@@ -1,5 +1,10 @@
 import type { NextConfig } from "next";
-import { GITHUB_PROFILE_URL, LINKEDIN_URL, RESUME_URL } from "@/lib/links";
+import {
+  GITHUB_PROFILE_URL,
+  LINKEDIN_URL,
+  RESUME_MD_URL,
+  RESUME_PDF_URL,
+} from "@/lib/links";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -49,12 +54,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/resume",
-        destination: RESUME_URL,
+        destination: RESUME_PDF_URL,
+        permanent: false,
+      },
+      {
+        source: "/resume.pdf",
+        destination: RESUME_PDF_URL,
+        permanent: false,
+      },
+      {
+        source: "/resume.md",
+        destination: RESUME_MD_URL,
         permanent: false,
       },
       {
         source: "/cv",
-        destination: RESUME_URL,
+        destination: RESUME_PDF_URL,
         permanent: false,
       },
     ];

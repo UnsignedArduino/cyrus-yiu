@@ -10,5 +10,7 @@ export const GITHUB_ISSUES_URL = `${GITHUB_REPO_URL}/issues`;
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/cyrus-yiu";
 
-export const RESUME_URL =
+export const RESUME_PDF_URL =
   "https://drive.google.com/file/d/1d8ebDEHgOkQAGk4MCLDuOBT41HX_DKrX/view";
+export const RESUME_MD_URL =
+  "https://drive.google.com/file/d/1KwjGPzZeaJiSf1_xsNplnxwsLqQo22LB/view";
