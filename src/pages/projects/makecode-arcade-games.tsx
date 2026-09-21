@@ -37,12 +37,13 @@ export default function MakeCodeArcadeGames() {
       <h2>MakeCode Arcade Games</h2>
       <p>
         Here are some of the MakeCode Arcade games that I have made, including
-        game-jam-winning and featured games!
+        games that won or were featured in official Microsoft MakeCode Arcade
+        game jams!
       </p>
       <div className="alert alert-warning" role="alert">
-        Due to the age of some of these games and updates made to the MakeCode
-        Arcade simulator, there may be more bugs than when these games were
-        initially developed!
+        Due to the age of some of these games and further updates made to the
+        MakeCode Arcade simulator, there may be more bugs than when these games
+        were initially developed.
       </div>
       <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4 mb-2">
         <div className="col">

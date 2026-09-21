@@ -7,14 +7,23 @@ export default function Home() {
       <h2>About Me</h2>
       <p>
         Hello! I{"'"}m Cyrus Yiu, a second-year Computer Engineering major at
-        University of Massachusetts Lowell. Check out my favorite projects{" "}
-        <AutoLink href="/projects">here</AutoLink>, or let{"'"}s{" "}
-        <AutoLink href="/contact">get in touch</AutoLink>!
+        the University of Massachusetts Lowell.
       </p>
       <p>
-        Besides engineering and working on personal digital and physical
-        projects, I enjoy other extracurriculars such as robotics, rocketry, and
-        marching band!
+        I{"'"}m doing research at the Laboratory of Advanced Computing and
+        Networking Systems (ACANETS), redesigning wind turbine structural health
+        monitoring nodes and benchmarking TinyML frameworks on microcontrollers.
+        I{"'"}ve also worked on sensor integration at the Raytheon UMass Lowell
+        Research Institute (RURI).
+      </p>
+      <p>
+        Outside of engineering, I{"'"}m involved in robotics, rocketry, and
+        marching band at UML!
+      </p>
+      <p>
+        Check out my favorite projects{" "}
+        <AutoLink href="/projects">here</AutoLink>, or let{"'"}s{" "}
+        <AutoLink href="/contact">get in touch</AutoLink>!
       </p>
       {/*<div>*/}
       {/*  <AutoLink href="https://github.com/UnsignedArduino">*/}
